@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en" class="heading-black">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="VJR - PT Vista Jaya Raya | Solusi Teknologi dan Keuangan Digital Terpercaya">
+    <meta name="keywords" content="VJR, Vista Jaya Raya, Fintech, Teknologi, Keuangan Digital, IT Solution, AFPI">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>VJR - Contact</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/images/logo/favicon.png">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <!-- aos -->
+    <link rel="stylesheet" href="../assets/css/aos.css">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+    <!-- Magnific -->
+    <link rel="stylesheet" href="../assets/css/magnific-popup.css">
+    <!-- Satoshi -->
+    <link rel="stylesheet" href="../assets/css/satoshi.css">
+    <!-- Main css -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <!--==================== Preloader Start ====================-->
+    <div class="preloader">
+        <div class="cssload-loading"><i></i><i></i><i></i><i></i></div>
+    </div>
+    <!--==================== Preloader End ====================-->
+
+    <!--==================== Overlay Start ====================-->
+    <div class="overlay"></div>
+    <!--==================== Overlay End ====================-->
+
+    <!--==================== Sidebar Overlay End ====================-->
+    <div class="side-overlay"></div>
+    <!--==================== Sidebar Overlay End ====================-->
+
+    <!-- Custom Toast Message start -->
+    <div id="toast-container"></div>
+    <!-- Custom Toast Message End -->
+
+    <!-- ==================== Scroll to Top End Here ==================== -->
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- ==================== Scroll to Top End Here ==================== -->
+
+    <!-- Custom Cursor Start -->
+    <div class="cursor"></div>
+    <span class="dot"></span>
+    <!-- Custom Cursor End -->
+
+    <!-- ==================== Mobile Menu Start Here ==================== -->
+    <div
+        class="mobile-menu d-lg-none d-block scroll-sm position-fixed bg-white tw-w-300-px tw-h-screen overflow-y-auto tw-p-6 tw-z-999 tw--translate-x-full tw-pb-68 ">
+
+        <button type="button"
+            class="close-button position-absolute tw-end-0 top-0 tw-me-2 tw-mt-2 tw-w-605 tw-h-605 rounded-circle d-flex justify-content-center align-items-center text-neutral-900 bg-neutral-200 hover-bg-neutral-900 hover-text-white">
+            <i class="ph ph-x"></i>
+        </button>
+
+        <div class="mobile-menu__inner">
+            <a href="../" class="mobile-menu__logo">
+                <img src="../assets/images/logo/logo.png" alt="Logo">
+            </a>
+            <div class="mobile-menu__menu">
+                <!-- Nav menu Start -->
+                <ul class="nav-menu nav-menu--mobile d-block tw-mt-8">
+                    <li class="nav-menu__item">
+                        <a href="../" class="nav-menu__link text-heading fw-semibold w-100">Home</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="/about" class="nav-menu__link text-heading fw-semibold w-100">About Us</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="/service" class="nav-menu__link text-heading fw-semibold w-100">Our Services</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="/faq" class="nav-menu__link text-heading fw-semibold w-100">Help &amp; FAQ</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="/contact" class="nav-menu__link text-heading fw-semibold w-100">Contact Us</a>
+                    </li>
+                </ul>
+                <!-- Nav menu End -->
+            </div>
+
+            <style>
+                /* === MOBILE MENU STYLE === */
+                .nav-menu--mobile {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                .nav-menu--mobile .nav-menu__item {
+                    border-bottom: 1px solid #eee;
+                }
+
+                .nav-menu--mobile .nav-menu__link {
+                    display: block;
+                    padding: 12px 16px;
+                    color: #1a1a1a;
+                    text-decoration: none;
+                    font-weight: 600;
+                    transition: color 0.2s ease;
+                }
+
+                /* Warna biru untuk halaman aktif */
+                .nav-menu--mobile .nav-menu__item.activePage>a {
+                    color: var(--main-600) !important;
+                    font-weight: 700;
+                }
+
+                /* Pastikan link visited tetap warna normal */
+                .nav-menu--mobile .nav-menu__link:visited {
+                    color: #1a1a1a;
+                }
+
+                /* Efek tap ringan di mobile */
+                .nav-menu--mobile .nav-menu__link:active {
+                    opacity: 0.7;
+                }
+            </style>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    const menuItems = document.querySelectorAll('.nav-menu--mobile .nav-menu__item');
+                    const currentPage = window.location.pathname.split('/').pop() || '../';
+
+                    menuItems.forEach(item => {
+                        const link = item.querySelector('a');
+                        const linkPage = link.getAttribute('href').split('/').pop();
+
+                        if (linkPage === currentPage) {
+                            item.classList.add('activePage');
+                        } else {
+                            item.classList.remove('activePage');
+                        }
+                    });
+                });
+            </script>
+
+
+        </div>
+        <a href="/contact"
+            class="btn btn-main-two hover-style-two button--stroke d-sm-none d-inline-flex align-items-center justify-content-center tw-gap-5 group active--translate-y-2 tw-px-8 rounded-pill tw-mt-6"
+            data-block="button">
+            <span class="button__flair"></span>
+            <span class="button__label">Contact Us</span>
+        </a>
+    </div>
+    <!-- ==================== Mobile Menu End Here ==================== -->
+
+
+    <div id="smooth-wrapper">
+
+        <!-- ==================== Header Two Start Here ==================== -->
+        <header class="header bg-white transition-all">
+            <div class="container container-two">
+                <nav class="d-flex align-items-center justify-content-between">
+                    <!-- Logo Start -->
+                    <div class="logo">
+                        <a href="../" class="link hover--translate-y-1 active--translate-y-scale-9">
+                            <img src="../assets/images/logo/logo.png" alt="Logo" class="max-w-200-px">
+                        </a>
+                    </div>
+                    <!-- Logo End  -->
+
+                    <!-- Menu Start  -->
+                    <div class="header-menu d-lg-block d-none">
+                        <!-- Nav menu Start -->
+                        <ul class="nav-menu d-lg-flex align-items-center tw-gap-14">
+                            </li>
+                            <li class="nav-menu__item">
+                                <a href="../"
+                                    class="nav-menu__link hover--translate-y-1 text-heading tw-py-9 fw-semibold w-100">Home</a>
+                            </li>
+                            </li>
+                            <li class="nav-menu__item">
+                                <a href="/about"
+                                    class="nav-menu__link hover--translate-y-1 text-heading tw-py-9 fw-semibold w-100">About
+                                    Us</a>
+                            </li>
+                            </li>
+                            <li class="nav-menu__item">
+                                <a href="/service"
+                                    class="nav-menu__link hover--translate-y-1 text-heading tw-py-9 fw-semibold w-100">Our
+                                    Services</a>
+                            </li>
+                            <li class="nav-menu__item">
+                                <a href="/faq"
+                                    class="nav-menu__link hover--translate-y-1 text-heading tw-py-9 fw-semibold w-100">Help
+                                    &amp; FAQ</a>
+                            </li>
+                            <!-- <li class="nav-menu__item">
+                                <a href="/contact"
+                                    class="nav-menu__link hover--translate-y-1 text-heading tw-py-9 fw-semibold w-100">Contact</a>
+                            </li> -->
+                        </ul>
+                        <script>
+                            document.addEventListener('DOMContentLoaded', () => {
+                                const menuItems = document.querySelectorAll('.nav-menu__item');
+                                const currentPage = window.location.pathname.split('/').pop() || '../';
+
+                                menuItems.forEach(item => {
+                                    const link = item.querySelector('a');
+                                    const linkPage = link.getAttribute('href').split('/').pop();
+
+                                    if (linkPage === currentPage) {
+                                        item.classList.add('activePage');
+                                    } else {
+                                        item.classList.remove('activePage');
+                                    }
+                                });
+                            });
+                        </script>
+
+                        <!-- Nav menu End  -->
+
+                    </div>
+                    <!-- Menu End  -->
+
+                    <!-- Header Right start -->
+                    <div class="d-flex align-items-center tw-gap-6">
+                        <a href="/contact"
+                            class="hover--translate-y-1 active--translate-y-scale-9 btn btn-main-two hover-style-two button--stroke d-sm-inline-flex d-none align-items-center justify-content-center tw-gap-5 group active--translate-y-2 tw-px-9 rounded-pill tw-py-4 fw-semibold"
+                            data-block="button">
+                            <span class="button__flair"></span>
+                            <span class="button__label">Contact Us</span>
+                        </a>
+                        <button type="button"
+                            class="toggle-mobileMenu leading-none d-lg-none text-neutral-800 tw-text-9">
+                            <i class="ph ph-list"></i>
+                        </button>
+                    </div>
+                    <!-- Header Right End  -->
+                </nav>
+            </div>
+        </header>
+        <!-- ==================== Header Two End Here ==================== -->
+
+        <div id="smooth-content">
+
+            <!-- =============================== Contact Page section start =============================== -->
+            <section class="contact-wrap py-120">
+                <div class="container">
+                    <div class="row g-4 align-items-stretch">
+
+                        <!-- Kolom Info -->
+                        <div class="col-lg-5">
+                            <div class="d-flex flex-column h-100">
+                                <div class="mb-4">
+                                    <span class="tw-text-sm fw-semibold text-main-600 d-inline-block tw-mb-205">Contact
+                                        Us</span>
+                                    <h3 class="tw-mb-3 splitTextStyleOne">PT Vista Jaya Raya</h3>
+                                    <p class="text-neutral-900 tw-mb-0">
+                                        AFPI-certified billing and telemarketing partner. We support Desk/Field
+                                        Collection and operational activities effectively, ethically, and in full
+                                        compliance with regulations.
+                                    </p>
+                                </div>
+
+                                <!-- Info chips -->
+                                <div class="contact-grid tw-mt-6">
+                                    <!-- Location -->
+                                    <div class="contact-chip">
+                                        <div class="chip-icon"><i class="ph-bold ph-map-pin-simple"></i></div>
+                                        <div class="chip-body">
+                                            <div class="chip-title">Location</div>
+                                            <p class="chip-text mb-0">
+                                                Rukan Taman Meruya Blok N/37, South Kembangan, West Jakarta 11620
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Phone -->
+                                    <!-- <div class="contact-chip">
+                                        <div class="chip-icon"><i class="ph-bold ph-headset"></i></div>
+                                        <div class="chip-body">
+                                            <div class="chip-title">Phone</div>
+                                            <p class="chip-text mb-0">
+                                                <a href="tel:+622121267348" class="link-dark">(021) 21267348</a>
+                                            </p>
+                                        </div>
+                                    </div> -->
+                                    <!-- Email -->
+                                    <div class="contact-chip">
+                                        <div class="chip-icon"><i class="ph-bold ph-envelope-simple"></i></div>
+                                        <div class="chip-body">
+                                            <div class="chip-title">Email</div>
+                                            <p class="chip-text mb-0">
+                                                <a href="mailto:business@vjr.co.id" class="link-dark">business@vjr.co.id</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- WhatsApp -->
+                                    <div class="contact-chip">
+                                        <div class="chip-icon"><i class="ph-bold ph-phone"></i></div>
+                                        <div class="chip-body">
+                                            <div class="chip-title">WhatsApp</div>
+                                            <p class="chip-text mb-0">
+                                                <a href="https://wa.me/6285888797505?text=Hello%20PT%20Vista%20Jaya%20Raya%2C%20I%20would%20like%20to%20ask%20about%20your%20services"
+                                                    target="_blank" class="link-dark">+62 85888797505</a>
+                                            </p>
+                                            <br><br>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Kolom Form -->
+                        <div class="col-lg-7">
+                            <div class="contact-card h-100" id="contact-form">
+                                <h4 class="tw-mb-2">Send a Message</h4>
+                                <p class="text-neutral-600 tw-mb-7">Leave us your message — we will get back to you
+                                    soon.</p>
+
+                                <form action="#" class="d-flex flex-column tw-gap-12">
+                                    <div class="form-line">
+                                        <span class="form-icon"><i class="ph-bold ph-user"></i></span>
+                                        <input type="text" class="form-input" placeholder="Full Name*" required>
+                                    </div>
+
+                                    <div class="form-line">
+                                        <span class="form-icon"><i class="ph-bold ph-envelope"></i></span>
+                                        <input type="email" class="form-input" placeholder="Email Address*" required>
+                                    </div>
+
+                                    <div class="form-line">
+                                        <span class="form-icon"><i class="ph-bold ph-note-pencil"></i></span>
+                                        <textarea class="form-input" rows="4"
+                                            placeholder="Write your message here"></textarea>
+                                    </div>
+
+                                    <div class="d-flex align-items-center justify-content-between flex-wrap tw-gap-3">
+                                        <small class="text-neutral-500">
+                                            By submitting, you agree to be contacted back via email/phone.
+                                        </small>
+                                        <button type="submit"
+                                            class="btn btn-main d-inline-flex align-items-center tw-gap-3">
+                                            <i class="ph-bold ph-paper-plane-tilt tw-text-xl"></i> Send
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+            <!-- =============================== Contact Page section End =============================== -->
+
+
+            <!-- ========================== Footer Three Section Start ========================= -->
+            <footer class="footer bg-black position-relative z-1 mt-auto overflow-hidden"
+                style="padding: 60px 0 30px 0;">
+                <div class="container">
+                    <div class="row gy-4 gx-5">
+
+                        <!-- Left: Logo & AFPI -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer__about">
+                                <a href="../" class="d-inline-block mb-3">
+                                    <img src="../assets/images/logo/logo-white.png" alt="Vista Jaya Raya"
+                                        style="max-width:300px;">
+                                </a>
+
+                                <div style="margin-top: 15px;">
+                                    <p class="text-white mb-2" style="font-size: 14px; line-height: 1.5;">
+                                        PT Vista Jaya Raya is registered as
+                                    </p>
+                                    <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                                        <span class="text-white" style="font-size: 14px;">a member of</span>
+                                        <img src="../assets/images/logo/afpi-white.png" alt="AFPI License"
+                                            style="height: 35px; width: auto;">
+                                    </div>
+                                </div>
+                            </div />
+                        </div>
+
+                        <!-- Navigation Menu -->
+                        <div class="col-lg-2 col-md-6">
+                            <h6 class="text-white mb-3" style="font-size: 16px; font-weight: 600;">Menu</h6>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-2"><a href="../" class="text-white-50"
+                                        style="text-decoration: none; font-size: 14px; transition: color 0.3s;">Home</a>
+                                </li>
+                                <li class="mb-2"><a href="/about" class="text-white-50"
+                                        style="text-decoration: none; font-size: 14px; transition: color 0.3s;">About</a>
+                                </li>
+                                <li class="mb-2"><a href="/service" class="text-white-50"
+                                        style="text-decoration: none; font-size: 14px; transition: color 0.3s;">Our
+                                        Services</a></li>
+                                <li class="mb-2"><a href="/faq" class="text-white-50"
+                                        style="text-decoration: none; font-size: 14px; transition: color 0.3s;">Help
+                                        & FAQ</a></li>
+                                <!-- <li class="mb-2"><a href="/contact" class="text-white-50"
+                                        style="text-decoration: none; font-size: 14px; transition: color 0.3s;">Contact</a>
+                                </li> -->
+                            </ul>
+                        </div>
+
+                        <!-- Contact -->
+                        <div class="col-lg-3 col-md-6">
+                            <h6 class="text-white mb-3" style="font-size: 16px; font-weight: 600;">Contact Us</h6>
+                            <ul class="list-unstyled mb-0" style="font-size: 14px;">
+                                <li class="mb-3 d-flex align-items-start">
+                                    <i class="bi bi-whatsapp text-primary me-2"
+                                        style="font-size: 18px; margin-top: 2px;"></i>
+                                    <div>
+                                        <span class="text-white-50 d-block" style="font-size: 13px;">WhatsApp</span>
+                                        <a href="https://wa.me/6285888797505?text=Hello%20PT%20Vista%20Jaya%20Raya%2C%20I%20would%20like%20to%20ask%20about%20your%20services"
+                                            class="text-white" style="text-decoration: none;"
+                                            target="_blank">085888797505</a>
+                                    </div>
+                                </li>
+                                <!-- <li class="mb-3 d-flex align-items-start">
+                                    <i class="bi bi-telephone-fill text-primary me-2"
+                                        style="font-size: 18px; margin-top: 2px;"></i>
+                                    <div>
+                                        <span class="text-white-50 d-block" style="font-size: 13px;">Phone</span>
+                                        <a href="tel:+622121267348" class="text-white"
+                                            style="text-decoration: none;">(021) 21267348</a>
+                                    </div>
+                                </li> -->
+                                <li class="mb-3 d-flex align-items-start">
+                                    <i class="bi bi-envelope-fill text-primary me-2"
+                                        style="font-size: 18px; margin-top: 2px;"></i>
+                                    <div>
+                                        <span class="text-white-50 d-block" style="font-size: 13px;">Email</span>
+                                        <a href="mailto:business@vjr.co.id?subject=Service%20Inquiry%20-%20PT%20Vista%20Jaya%20Raya&body=Hello%20PT%20Vista%20Jaya%20Raya%20Team%2C%0A%0AI%20would%20like%20to%20ask%20about%3A%0A"
+                                            class="text-white" style="text-decoration: none;">business@vjr.co.id</a>
+                                    </div>
+                                </li>
+                                <!-- <li class="mb-3 d-flex align-items-start">
+                                    <i class="bi bi-calendar2-week-fill text-primary me-2"
+                                        style="font-size: 18px; margin-top: 2px;"></i>
+                                    <div>
+                                        <span class="text-white-50 d-block" style="font-size: 13px;">Schedule a
+                                            Call</span>
+                                        <a href="mailto:business@vjr.co.id?subject=Schedule%20a%20Call%20-%20PT%20Vista%20Jaya%20Raya&body=Hello%20PT%20Vista%20Jaya%20Raya%20Team%2C%0A%0AI%20would%20like%20to%20schedule%20a%20call%20to%20discuss%20your%20collection%20services.%0A%0APlease%20let%20me%20know%20your%20available%20times%20or%20propose%20a%20slot.%0A%0AThank%20you.%0A"
+                                            class="text-white" style="text-decoration: none;">business@vjr.co.id</a>
+                                    </div>
+                                </li> -->
+
+                                <li class="mb-3 d-flex align-items-start">
+                                    <i class="bi bi-envelope-paper-fill text-primary me-2"
+                                        style="font-size: 18px; margin-top: 2px;"></i>
+                                    <div>
+                                        <span class="text-white-50 d-block" style="font-size: 13px;">Request
+                                            Proposal</span>
+                                        <a href="mailto:business@vjr.co.id?subject=Request%20Proposal%20-%20PT%20Vista%20Jaya%20Raya&body=Hello%20PT%20Vista%20Jaya%20Raya%20Team%2C%0A%0AI%20would%20like%20to%20request%20a%20proposal%20regarding%20your%20collection%20services.%0A%0APlease%20provide%20details%20on%3A%0A-%20Service%20scope%0A-%20Pricing%20model%0A-%20Implementation%20process%0A-%20Requirements%0A%0AThank%20you.%0A"
+                                            class="text-white" style="text-decoration: none;">business@vjr.co.id</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Address & Map -->
+                        <div class="col-lg-4 col-md-6">
+                            <h6 class="text-white mb-3" style="font-size:16px;font-weight:600;">
+                                Our Locations
+                            </h6>
+
+                            <!-- ===== Head Office ===== -->
+                            <h6 class="text-white mb-2" style="font-size:14px;font-weight:500;">
+                                Head Office
+                            </h6>
+
+                            <div class="footer-map mb-2">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.5410816318586!2d106.7408267!3d-6.192103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f746ac6e4755%3A0x64fed1b6a2ff1bd4!2sPT.%20Vista%20Jaya%20Raya!5e0!3m2!1sen!2sid!4v1769154835716!5m2!1sen!2sid"
+                                    width="100%" height="140"
+                                    style="border:0;border-radius:10px;filter:grayscale(10%) contrast(95%);"
+                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+
+                            <div class="d-flex align-items-start mb-4">
+                                <i class="bi bi-geo-alt-fill text-primary me-2"
+                                    style="font-size:16px;margin-top:2px;"></i>
+                                <p class="text-white-50 mb-0" style="font-size:13px;line-height:1.6;">
+                                    Rukan Taman Meruya Block N No.11-12, Kembangan Selatan,<br>
+                                    Kembangan, West Jakarta 11620
+                                </p>
+                            </div>
+
+                            <!-- ===== Branch Office ===== -->
+                            <h6 class="text-white mb-2" style="font-size:14px;font-weight:500;">
+                                Branch Office
+                            </h6>
+
+                            <div class="footer-map mb-2">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.38893695986!2d110.41136629999999!3d-6.993720599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708b4f3d09bb1b%3A0x7f6f2c4c0cbcd74b!2sJl.%20Indraprasta%20No.64%2C%20Pindrikan%20Lor%2C%20Kec.%20Semarang%20Tengah%2C%20Kota%20Semarang%2C%20Jawa%20Tengah%2050131!5e0!3m2!1sen!2sid!4v1764825555000!5m2!1sen!2sid"
+                                    width="100%" height="110"
+                                    style="border:0;border-radius:10px;filter:grayscale(10%) contrast(95%);"
+                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-geo-alt-fill text-primary me-2"
+                                    style="font-size:16px;margin-top:2px;"></i>
+                                <p class="text-white-50 mb-0" style="font-size:13px;line-height:1.6;">
+                                    Jl. Indraprasta No.64, Pindrikan Lor, Kec. Semarang Tengah,<br>
+                                    Kota Semarang, Jawa Tengah 50131
+                                </p>
+                            </div>
+                        </div>
+
+
+
+                    </div><!-- /.row -->
+
+                    <!-- Divider & Copyright -->
+                    <div class="row mt-5 pt-3 border-top border-secondary">
+                        <div class="col-12 text-center">
+                            <p class="text-white-50 mb-0" style="font-size:14px;">
+                                Copyright &copy; 2025
+                                <a href="https://www.vjr.co.id" target="_blank"
+                                    class="fw-bold text-white hover-underline">
+                                    Vista Jaya Raya
+                                </a>
+                                <span>All rights reserved.</span>
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </footer>
+            <!-- ========================== Footer Three Section End ========================= -->
+
+        </div>
+    </div>
+
+    <!-- Jquery js -->
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <!-- phosphor Js -->
+    <script src="../assets/js/phosphor-icon.js"></script>
+    <!-- Bootstrap Bundle Js -->
+    <script src="../assets/js/boostrap.bundle.min.js"></script>
+
+    <!-- GSAP js -->
+    <script src="../assets/js/gsap.min.js"></script>
+    <!-- Scroll Trigger -->
+    <script src="../assets/js/ScrollTrigger.min.js"></script>
+    <!-- ScrollSmoother -->
+    <script src="../assets/js/ScrollSmoother.min.js"></script>
+    <!-- SplitText -->
+    <script src="../assets/js/SplitText.min.js"></script>
+    <!-- custom GSAP -->
+    <script src="../assets/js/custom-gsap.js"></script>
+
+    <!-- aos Js -->
+    <script src="../assets/js/aos.js"></script>
+    <!-- counter up Js -->
+    <script src="../assets/js/counterup.min.js"></script>
+    <!-- swiper Js -->
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+    <!-- Marquee js -->
+    <script src="../assets/js/jquery.marquee.min.js"></script>
+    <!-- magnific js -->
+    <script src="../assets/js/magnific-popup.min.js"></script>
+
+    <!-- main js -->
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

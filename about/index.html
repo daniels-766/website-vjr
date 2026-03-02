@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en" class="heading-black">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="VJR - PT Vista Jaya Raya | Trusted Technology and Digital Financial Solutions">
+    <meta name="keywords" content="VJR, Vista Jaya Raya, Fintech, Technology, Digital Finance, IT Solution, AFPI">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>VJR - About Us</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/images/logo/favicon.png">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <!-- aos -->
+    <link rel="stylesheet" href="../assets/css/aos.css">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+    <!-- Magnific -->
+    <link rel="stylesheet" href="../assets/css/magnific-popup.css">
+    <!-- Satoshi -->
+    <link rel="stylesheet" href="../assets/css/satoshi.css">
+    <!-- Main css -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+</head>
+
+<body>
+
+    <!--==================== Preloader Start ====================-->
+    <div class="preloader">
+        <div class="cssload-loading"><i></i><i></i><i></i><i></i></div>
+    </div>
+    <!--==================== Preloader End ====================-->
+
+    <!--==================== Overlay Start ====================-->
+    <div class="overlay"></div>
+    <!--==================== Overlay End ====================-->
+
+    <!--==================== Sidebar Overlay End ====================-->
+    <div class="side-overlay"></div>
+    <!--==================== Sidebar Overlay End ====================-->
+
+    <!-- Custom Toast Message start -->
+    <div id="toast-container"></div>
+    <!-- Custom Toast Message End -->
+
+    <!-- ==================== Scroll to Top End Here ==================== -->
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- ==================== Scroll to Top End Here ==================== -->
+
+    <!-- Custom Cursor Start -->
+    <div class="cursor"></div>
+    <span class="dot"></span>
+    <!-- Custom Cursor End -->
+
+    <!-- ==================== Mobile Menu Start Here ==================== -->
+    <div
+        class="mobile-menu d-lg-none d-block scroll-sm position-fixed bg-white tw-w-300-px tw-h-screen overflow-y-auto tw-p-6 tw-z-999 tw--translate-x-full tw-pb-68 ">
+
+        <button type="button"
+            class="close-button position-absolute tw-end-0 top-0 tw-me-2 tw-mt-2 tw-w-605 tw-h-605 rounded-circle d-flex justify-content-center align-items-center text-neutral-900 bg-neutral-200 hover-bg-neutral-900 hover-text-white">
+            <i class="ph ph-x"></i>
+        </button>
+
+        <div class="mobile-menu__inner">
+            <a href="../" class="mobile-menu__logo">
+                <img src="../assets/images/logo/logo.png" alt="Logo">
+            </a>
+            <div class="mobile-menu__menu">
+                <!-- Nav menu Start -->
+                <ul class="nav-menu nav-menu--mobile d-block tw-mt-8">
+                    <li class="nav-menu__item">
+                        <a href="../" class="nav-menu__link text-heading fw-semibold w-100">Home</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="/about" class="nav-menu__link text-heading fw-semibold w-100">About Us</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="/service" class="nav-menu__link text-heading fw-semibold w-100">Our Services</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="/faq" class="nav-menu__link text-heading fw-semibold w-100">Help &amp; FAQ</a>
+                    </li>
+                    <!-- <li class="nav-menu__item">
+                        <a href="/contact" class="nav-menu__link text-heading fw-semibold w-100">Contact</a>
+                    </li> -->
+                </ul>
+                <!-- Nav menu End -->
+            </div>
+
+            <style>
+                /* === MOBILE MENU STYLE === */
+                .nav-menu--mobile {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                .nav-menu--mobile .nav-menu__item {
+                    border-bottom: 1px solid #eee;
+                }
+
+                .nav-menu--mobile .nav-menu__link {
+                    display: block;
+                    padding: 12px 16px;
+                    color: #1a1a1a;
+                    text-decoration: none;
+                    font-weight: 600;
+                    transition: color 0.2s ease;
+                }
+
+                /* Active page color */
+                .nav-menu--mobile .nav-menu__item.activePage>a {
+                    color: var(--main-600) !important;
+                    font-weight: 700;
+                }
+
+                .nav-menu--mobile .nav-menu__link:visited {
+                    color: #1a1a1a;
+                }
+
+                .nav-menu--mobile .nav-menu__link:active {
+                    opacity: 0.7;
+                }
+            </style>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    const menuItems = document.querySelectorAll('.nav-menu--mobile .nav-menu__item');
+                    const currentPage = window.location.pathname.split('/').pop() || '../';
+
+                    menuItems.forEach(item => {
+                        const link = item.querySelector('a');
+                        const linkPage = link.getAttribute('href').split('/').pop();
+
+                        if (linkPage === currentPage) {
+                            item.classList.add('activePage');
+                        } else {
+                            item.classList.remove('activePage');
+                        }
+                    });
+                });
+            </script>
+
+
+        </div>
+        <a href="/contact"
+            class="btn btn-main-two hover-style-two button--stroke d-sm-none d-inline-flex align-items-center justify-content-center tw-gap-5 group active--translate-y-2 tw-px-8 rounded-pill tw-mt-6"
+            data-block="button">
+            <span class="button__flair"></span>
+            <span class="button__label">Contact Us</span>
+        </a>
+    </div>
+    <!-- ==================== Mobile Menu End Here ==================== -->
+
+
+    <div id="smooth-wrapper">
+
+        <!-- ==================== Header Two Start Here ==================== -->
+        <header class="header bg-white transition-all">
+            <div class="container container-two">
+                <nav class="d-flex align-items-center justify-content-between">
+                    <!-- Logo Start -->
+                    <div class="logo">
+                        <a href="../" class="link hover--translate-y-1 active--translate-y-scale-9">
+                            <img src="../assets/images/logo/logo.png" alt="Logo" class="max-w-200-px">
+                        </a>
+                    </div>
+                    <!-- Logo End  -->
+
+                    <!-- Menu Start  -->
+                    <div class="header-menu d-lg-block d-none">
+                        <!-- Nav menu Start -->
+                        <ul class="nav-menu d-lg-flex align-items-center tw-gap-14">
+                            </li>
+                            <li class="nav-menu__item">
+                                <a href="../"
+                                    class="nav-menu__link hover--translate-y-1 text-heading tw-py-9 fw-semibold w-100">Home</a>
+                            </li>
+                            </li>
+                            <li class="nav-menu__item">
+                                <a href="/about"
+                                    class="nav-menu__link hover--translate-y-1 text-heading tw-py-9 fw-semibold w-100">About
+                                    Us</a>
+                            </li>
+                            </li>
+                            <li class="nav-menu__item">
+                                <a href="/service"
+                                    class="nav-menu__link hover--translate-y-1 text-heading tw-py-9 fw-semibold w-100">Our
+                                    Services</a>
+                            </li>
+                            <li class="nav-menu__item">
+                                <a href="/faq"
+                                    class="nav-menu__link hover--translate-y-1 text-heading tw-py-9 fw-semibold w-100">Help
+                                    &amp; FAQ</a>
+                            </li>
+                            <!-- <li class="nav-menu__item">
+                                <a href="/contact"
+                                    class="nav-menu__link hover--translate-y-1 text-heading tw-py-9 fw-semibold w-100">Contact</a>
+                            </li> -->
+                        </ul>
+                        <script>
+                            document.addEventListener('DOMContentLoaded', () => {
+                                const menuItems = document.querySelectorAll('.nav-menu__item');
+                                const currentPage = window.location.pathname.split('/').pop() || '../';
+
+                                menuItems.forEach(item => {
+                                    const link = item.querySelector('a');
+                                    const linkPage = link.getAttribute('href').split('/').pop();
+
+                                    if (linkPage === currentPage) {
+                                        item.classList.add('activePage');
+                                    } else {
+                                        item.classList.remove('activePage');
+                                    }
+                                });
+                            });
+                        </script>
+
+                        <!-- Nav menu End  -->
+
+                    </div>
+                    <!-- Menu End  -->
+
+                    <!-- Header Right start -->
+                    <div class="d-flex align-items-center tw-gap-6">
+                        <a href="/contact"
+                            class="hover--translate-y-1 active--translate-y-scale-9 btn btn-main-two hover-style-two button--stroke d-sm-inline-flex d-none align-items-center justify-content-center tw-gap-5 group active--translate-y-2 tw-px-9 rounded-pill tw-py-4 fw-semibold"
+                            data-block="button">
+                            <span class="button__flair"></span>
+                            <span class="button__label">Contact Us</span>
+                        </a>
+                        <button type="button"
+                            class="toggle-mobileMenu leading-none d-lg-none text-neutral-800 tw-text-9">
+                            <i class="ph ph-list"></i>
+                        </button>
+                    </div>
+                    <!-- Header Right End  -->
+                </nav>
+            </div>
+        </header>
+        <!-- ==================== Header Two End Here ==================== -->
+
+        <div id="smooth-content">
+
+            <!-- ==================== Breadcrumb Start Here ==================== -->
+            <section class="breadcrumb section-bg-about mb-0">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="text-center">
+                                <h1 class="mb-0 splitTextStyleOne text-capitalize">About Us</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================== About Features section Start ====================== -->
+            <section class="about-features py-120 section-bg-two">
+                <div class="container">
+                    <div class="d-flex align-items-center justify-content-between flex-wrap tw-gap-6 tw-mb-12">
+                        <div class="max-w-532-px">
+                            <h3 class="splitTextStyleOne text-capitalize">
+                                Technology &amp; Collection Solutions
+                            </h3>
+                        </div>
+                        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800">
+                            <p
+                                class="splitTextStyleOne text-neutral-500 max-w-490-px fw-medium tw-ps-5 border-start border-app-landing border-2">
+                                PT Vista Jaya Raya (VJR) is a strategic partner in developing technology and digital
+                                financial services, with a focus on innovation, security, and efficiency to support your
+                                business growth.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row gy-4">
+                        <div class="col-xl-3 col-sm-6" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                            data-aos-duration="600">
+                            <div
+                                class="tw-rounded-2xl bg-white bg-hover-app-landing tw-py-14 tw-px-7 border border-neutral-200 group animation-item group-item tw-transition tw-duration-200 h-100">
+                                <span
+                                    class="tw-w-92-px tw-h-92-px rounded-circle d-flex align-items-center justify-content-center common-shadow-fifteen tw-mb-11">
+                                    <img src="../assets/images/icons/about-features-icon3.svg"
+                                        alt="Technology Innovation"
+                                        class="group-hover-item-text-invert tw-transition tw-duration-200 animate__heartBeat">
+                                </span>
+                                <h5
+                                    class="splitTextStyleOne tw-mb-7 group-hover-text-white tw-transition tw-duration-200">
+                                    Continuous Innovation
+                                </h5>
+                                <p
+                                    class="splitTextStyleOne group-hover-text-white fw-medium text-neutral-500 tw-transition tw-duration-200">
+                                    VJR continuously develops adaptive and innovative digital solutions to meet the
+                                    challenges of the modern era.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-sm-6" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                            data-aos-duration="800">
+                            <div
+                                class="tw-rounded-2xl bg-white bg-hover-app-landing tw-py-14 tw-px-7 border border-neutral-200 group animation-item group-item tw-transition tw-duration-200 h-100">
+                                <span
+                                    class="tw-w-92-px tw-h-92-px rounded-circle d-flex align-items-center justify-content-center common-shadow-fifteen tw-mb-11">
+                                    <img src="../assets/images/icons/about-features-icon2.svg" alt="Integrated Services"
+                                        class="group-hover-item-text-invert tw-transition tw-duration-200 animate__heartBeat">
+                                </span>
+                                <h5
+                                    class="splitTextStyleOne tw-mb-7 group-hover-text-white tw-transition tw-duration-200">
+                                    Integrated and End-to-End Services
+                                </h5>
+                                <p
+                                    class="splitTextStyleOne group-hover-text-white fw-medium text-neutral-500 tw-transition tw-duration-200">
+                                    From financial solutions to technology systems, VJR delivers integrated services
+                                    that work seamlessly together.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-sm-6" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                            data-aos-duration="1000">
+                            <div
+                                class="tw-rounded-2xl bg-white bg-hover-app-landing tw-py-14 tw-px-7 border border-neutral-200 group animation-item group-item tw-transition tw-duration-200 h-100">
+                                <span
+                                    class="tw-w-92-px tw-h-92-px rounded-circle d-flex align-items-center justify-content-center common-shadow-fifteen tw-mb-11">
+                                    <img src="../assets/images/icons/about-features-icon1.svg"
+                                        alt="Security & Transparency"
+                                        class="group-hover-item-text-invert tw-transition tw-duration-200 animate__heartBeat">
+                                </span>
+                                <h5
+                                    class="splitTextStyleOne tw-mb-7 group-hover-text-white tw-transition tw-duration-200">
+                                    Security and Transparency
+                                </h5>
+                                <p
+                                    class="splitTextStyleOne group-hover-text-white fw-medium text-neutral-500 tw-transition tw-duration-200">
+                                    Every VJR service is designed with robust security and transparent processes to earn
+                                    and maintain client trust.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-sm-6" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                            data-aos-duration="1200">
+                            <div
+                                class="tw-rounded-2xl bg-white bg-hover-app-landing tw-py-14 tw-px-7 border border-neutral-200 group animation-item group-item tw-transition tw-duration-200 h-100">
+                                <span
+                                    class="tw-w-92-px tw-h-92-px rounded-circle d-flex align-items-center justify-content-center common-shadow-fifteen tw-mb-11">
+                                    <img src="../assets/images/icons/about-features-icon4.svg" alt="Ease & Support"
+                                        class="group-hover-item-text-invert tw-transition tw-duration-200 animate__heartBeat">
+                                </span>
+                                <h5
+                                    class="splitTextStyleOne tw-mb-7 group-hover-text-white tw-transition tw-duration-200">
+                                    Ease and Dedicated Support
+                                </h5>
+                                <p
+                                    class="splitTextStyleOne group-hover-text-white fw-medium text-neutral-500 tw-transition tw-duration-200">
+                                    VJR provides intuitive user experiences and professional support at every step of
+                                    your journey.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ================== About Features section End ====================== -->
+
+            <section class="vjr-stats">
+                <div class="vjr-stats__wrap mb-3 mt-3">
+                    <div class="vjr-stat">
+                        <div class="vjr-number">2021</div>
+                        <div class="vjr-text">
+                            <div class="vjr-title">Founded</div>
+                            <div class="vjr-sub">The beginning of VJR’s journey</div>
+                        </div>
+                    </div>
+
+                    <div class="vjr-stat">
+                        <div class="vjr-number">450+</div>
+                        <div class="vjr-text">
+                            <div class="vjr-title">Professional Staff</div>
+                            <div class="vjr-sub">across Indonesia</div>
+                        </div>
+                    </div>
+
+                    <div class="vjr-stat">
+                        <div class="vjr-number">2</div>
+                        <div class="vjr-text">
+                            <div class="vjr-title">Branches</div>
+                            <div class="vjr-sub">Jakarta &amp; Semarang</div>
+                        </div>
+                    </div>
+
+                    <div class="vjr-stat">
+                        <div class="vjr-number">AFPI</div>
+                        <div class="vjr-text">
+                            <div class="vjr-title">Certified</div>
+                            <div class="vjr-sub">All operational teams</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- ============================ Testimonials section start ============================= -->
+            <section class="testimonials py-120 bg-neutral-50 position-relative z-1">
+                <img src="../assets/images/shapes/faq-bg.png" alt=""
+                    class="position-absolute tw-start-0 top-0 w-100 h-100 z-n1">
+
+                <div class="container">
+                    <div class="max-w-602-px mx-auto text-center tw-mb-15">
+
+                        <h3 class="splitTextStyleOne fw-light tw-leading-104 tw-mb-9 d-flex gap-2">
+                            <span class="d-inline-block fw-medium">
+                                <span class="fw-semibold">How VJR Supports Your Business</span>
+                            </span>
+                        </h3>
+                    </div>
+
+                    <div class="d-flex tw-gap-6 testimonials-item-wrapper flex-wrap">
+                        <!-- Item 1: Security & Compliance -->
+                        <div
+                            class="testimonials-item cursor-pointer bg-white tw-rounded-28-px border border-neutral-100 active">
+                            <div class="current-content">
+                                <!-- big icon, centered -->
+                                <div class="tw-max-h-397-px overflow-hidden text-center">
+                                    <div class="d-flex align-items-center justify-content-center" style="height:220px;">
+                                        <span
+                                            style="display:inline-flex;align-items:center;justify-content:center;width:120px;height:120px;border-radius:9999px;background:#F3F5F7;">
+                                            <img src="../assets/images/icons/security-shield.svg"
+                                                alt="Security & Compliance"
+                                                style="width:64px;height:64px;object-fit:contain;">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="tw-py-8 tw-px-4 text-center">
+                                    <h6 class="tw-mb-2">Security &amp; Compliance</h6>
+                                    <span class="text-neutral-600 fw-medium tw-text-sm">End-to-end encryption • Audit •
+                                        AFPI/AML-CFT</span>
+                                </div>
+                            </div>
+
+                            <div class="hidden-content tw-px-56-px tw-py-76-px">
+                                <div class="">
+                                    <div class="border-bottom border-neutral-200 tw-pb-10 tw-mb-8">
+                                        <p
+                                            class="testimonials-item__desc h5 text-heading fw-medium tw-leading-153 line-clamp-4">
+                                            Role-based access control, in-transit and at-rest encryption, and ongoing
+                                            compliance training ensure secure and transparent operations.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center tw-gap-6">
+                                    <div class="tw-h-84-px tw-w-84-px rounded-circle d-flex align-items-center justify-content-center"
+                                        style="background:#F3F5F7;">
+                                        <img src="../assets/images/icons/security-shield.svg" alt="Key Focus"
+                                            style="width:40px;height:40px;object-fit:contain;">
+                                    </div>
+                                    <div>
+                                        <h6 class="tw-mb-2">Key Focus</h6>
+                                        <span class="text-neutral-600 fw-medium tw-text-sm">Encryption • Audit •
+                                            Policies &amp; SOPs</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Item 1 -->
+
+                        <!-- Item 2: Integration & API -->
+                        <div
+                            class="testimonials-item cursor-pointer bg-white tw-rounded-28-px border border-neutral-100">
+                            <div class="current-content">
+                                <div class="tw-max-h-397-px overflow-hidden text-center">
+                                    <div class="d-flex align-items-center justify-content-center" style="height:220px;">
+                                        <span
+                                            style="display:inline-flex;align-items:center;justify-content:center;width:120px;height:120px;border-radius:9999px;background:#F3F5F7;">
+                                            <img src="../assets/images/icons/api-link.svg" alt="Integration & API"
+                                                style="width:64px;height:64px;object-fit:contain;">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="tw-py-8 tw-px-4 text-center">
+                                    <h6 class="tw-mb-2">Integration &amp; API</h6>
+                                    <span class="text-neutral-600 fw-medium tw-text-sm">KYC/KYB • Scoring • Real-time
+                                        webhooks</span>
+                                </div>
+                            </div>
+
+                            <div class="hidden-content tw-px-56-px tw-py-76-px">
+                                <div class="">
+                                    <div class="border-bottom border-neutral-200 tw-pb-10 tw-mb-8">
+                                        <p
+                                            class="testimonials-item__desc h5 text-heading fw-medium tw-leading-153 line-clamp-4">
+                                            Clear documentation, UAT sandbox environments, and standardized endpoints
+                                            make integration fast, reliable, and scalable.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center tw-gap-6">
+                                    <div class="tw-h-84-px tw-w-84-px rounded-circle d-flex align-items-center justify-content-center"
+                                        style="background:#F3F5F7;">
+                                        <img src="../assets/images/icons/api-link.svg" alt="Technical Components"
+                                            style="width:40px;height:40px;object-fit:contain;">
+                                    </div>
+                                    <div>
+                                        <h6 class="tw-mb-2">Technical Components</h6>
+                                        <span class="text-neutral-600 fw-medium tw-text-sm">Auth • Versioning •
+                                            Observability</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Item 2 -->
+
+                        <!-- Item 3: Operations & Monitoring -->
+                        <div
+                            class="testimonials-item cursor-pointer bg-white tw-rounded-28-px border border-neutral-100">
+                            <div class="current-content">
+                                <div class="tw-max-h-397-px overflow-hidden text-center">
+                                    <div class="d-flex align-items-center justify-content-center" style="height:220px;">
+                                        <span
+                                            style="display:inline-flex;align-items:center;justify-content:center;width:120px;height:120px;border-radius:9999px;background:#F3F5F7;">
+                                            <img src="../assets/images/icons/monitoring-dashboard.svg"
+                                                alt="Operations & Monitoring"
+                                                style="width:64px;height:64px;object-fit:contain;">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="tw-py-8 tw-px-4 text-center">
+                                    <h6 class="tw-mb-2">Operations &amp; Monitoring</h6>
+                                    <span class="text-neutral-600 fw-medium tw-text-sm">Dashboards • Alerts • Regular
+                                        reporting</span>
+                                </div>
+                            </div>
+
+                            <div class="hidden-content tw-px-56-px tw-py-76-px">
+                                <div class="">
+                                    <div class="border-bottom border-neutral-200 tw-pb-10 tw-mb-8">
+                                        <p
+                                            class="testimonials-item__desc h5 text-heading fw-medium tw-leading-153 line-clamp-4">
+                                            Real-time performance monitoring, SLA reporting, and structured incident
+                                            management help maintain reliable services.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center tw-gap-6">
+                                    <div class="tw-h-84-px tw-w-84-px rounded-circle d-flex align-items-center justify-content-center"
+                                        style="background:#F3F5F7;">
+                                        <img src="../assets/images/icons/monitoring-dashboard.svg" alt="Outcome"
+                                            style="width:40px;height:40px;object-fit:contain;">
+                                    </div>
+                                    <div>
+                                        <h6 class="tw-mb-2">Outcomes</h6>
+                                        <span class="text-neutral-600 fw-medium tw-text-sm">99.9% SLA • Reduced
+                                            downtime • Faster access</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Item 3 -->
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-bg-two py-120">
+                <div class="container">
+                    <div class="row g-5 align-items-center">
+
+                        <!-- KIRI: Header + Title + Button -->
+                        <div class="col-lg-6">
+                            <span class="tw-text-sm fw-semibold text-main-600 d-inline-block mb-2">
+                                Who We Are
+                            </span>
+
+                            <h2 class="text-heading mb-3">
+                                Vista Jaya Raya (VJR)
+                            </h2>
+
+                            <p class="text-neutral-600 mb-4">
+                                Vista Jaya Raya (VJR) is a certified professional service provider specializing in
+                                Desk Collection, Field Collection, Telemarketing, Customer Service, Credit Analysis,
+                                and App Testing.
+                            </p>
+                        </div>
+
+                        <!-- KANAN: Paragraph tambahan -->
+                        <div class="col-lg-6">
+                            <p class="text-neutral-600 mb-0 tw-text-lg">
+                                We are fully AFPI-certified and ISO 27001:2022 certified, ensuring ethical
+                                collection practices and secure data management across every touchpoint.
+                                Our team consists of trained professionals who maintain compliance and uphold
+                                industry standards in every interaction.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <br><br><br>
+                    <div class="row g-5 align-items-start">
+
+                        <!-- KIRI: Image -->
+                        <div class="col-lg-6">
+                            <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm">
+                                <img src="../assets/images/thumbs/about-team.jpg" alt="Vista Jaya Raya team"
+                                    class="w-100 h-100 object-fit-cover">
+                            </div>
+                        </div>
+                        <!-- KANAN: Highlight Cards -->
+                        <div class="col-lg-6">
+                            <div class="row g-4">
+
+                                <!-- ISO -->
+                                <div class="col-sm-6">
+                                    <div class="bg-white border border-neutral-100 tw-rounded-2xl tw-p-6 h-100">
+                                        <div class="tw-text-2xl mb-3">🔒</div>
+                                        <h6 class="fw-semibold mb-2">ISO 27001:2022</h6>
+                                        <p class="text-neutral-500 tw-text-sm">
+                                            International information security standard for end-to-end data protection.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- AFPI -->
+                                <div class="col-sm-6">
+                                    <div class="bg-white border border-neutral-100 tw-rounded-2xl tw-p-6 h-100">
+                                        <div class="tw-text-2xl mb-3">🧑‍💼</div>
+                                        <h6 class="fw-semibold mb-2">AFPI-Certified Agents</h6>
+                                        <p class="text-neutral-500 tw-text-sm">
+                                            Certified Desk & Field Collectors trained in ethical and compliant
+                                            practices.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- City coverage -->
+                                <div class="col-12">
+                                    <div class="bg-white border border-neutral-100 tw-rounded-2xl tw-p-6 h-100">
+                                        <div class="tw-text-2xl mb-3">🏢</div>
+                                        <h6 class="fw-semibold mb-2">Jakarta & Semarang</h6>
+                                        <p class="text-neutral-500 tw-text-sm">
+                                            Scalable workforce supported by 450+ professional agents across key cities.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============================ Testimonials section End ============================= -->
+
+            <section class="agent-gallery">
+                <div class="container">
+                    <div class="agent-gallery-header">
+                        <h3>Our Working Environment</h3>
+                        <p>Snapshots of our agents and daily operations.</p>
+                    </div>
+
+                    <!-- SWIPER -->
+                    <div class="swiper agentSwiper">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <img src="../assets/images/thumbs/gallery-1.png" alt="">
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="../assets/images/thumbs/gallery-4.png" alt="">
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="../assets/images/thumbs/gallery-2.png" alt="">
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="../assets/images/thumbs/gallery-5.png" alt="">
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="../assets/images/thumbs/gallery-3.png" alt="">
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="../assets/images/thumbs/gallery-6.png" alt="">
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="../assets/images/thumbs/gallery-7.png" alt="">
+                            </div>
+
+                        </div>
+
+                        <!-- Pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- Navigation -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================== Footer Three Section Start ========================= -->
+            <footer class="footer bg-black position-relative z-1 mt-auto overflow-hidden"
+                style="padding: 60px 0 30px 0;">
+                <div class="container">
+                    <div class="row gy-4 gx-5">
+
+                        <!-- Left: Logo & AFPI -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer__about">
+                                <a href="../" class="d-inline-block mb-3">
+                                    <img src="../assets/images/logo/logo-white.png" alt="Vista Jaya Raya"
+                                        style="max-width:300px;">
+                                </a>
+
+                                <div style="margin-top: 15px;">
+                                    <p class="text-white mb-2" style="font-size: 14px; line-height: 1.5;">
+                                        PT Vista Jaya Raya is registered as
+                                    </p>
+                                    <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                                        <span class="text-white" style="font-size: 14px;">a member of</span>
+                                        <img src="../assets/images/logo/afpi-white.png" alt="AFPI License"
+                                            style="height: 35px; width: auto;">
+                                    </div>
+                                </div>
+                            </div />
+                        </div>
+
+                        <!-- Navigation Menu -->
+                        <div class="col-lg-2 col-md-6">
+                            <h6 class="text-white mb-3" style="font-size: 16px; font-weight: 600;">Menu</h6>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-2"><a href="../" class="text-white-50"
+                                        style="text-decoration: none; font-size: 14px; transition: color 0.3s;">Home</a>
+                                </li>
+                                <li class="mb-2"><a href="/about" class="text-white-50"
+                                        style="text-decoration: none; font-size: 14px; transition: color 0.3s;">About</a>
+                                </li>
+                                <li class="mb-2"><a href="/service" class="text-white-50"
+                                        style="text-decoration: none; font-size: 14px; transition: color 0.3s;">Our
+                                        Services</a></li>
+                                <li class="mb-2"><a href="/faq" class="text-white-50"
+                                        style="text-decoration: none; font-size: 14px; transition: color 0.3s;">Help
+                                        & FAQ</a></li>
+                                <!-- <li class="mb-2"><a href="/contact" class="text-white-50"
+                                        style="text-decoration: none; font-size: 14px; transition: color 0.3s;">Contact</a>
+                                </li> -->
+                            </ul>
+                        </div>
+
+                        <!-- Contact -->
+                        <div class="col-lg-3 col-md-6">
+                            <h6 class="text-white mb-3" style="font-size: 16px; font-weight: 600;">Contact Us</h6>
+                            <ul class="list-unstyled mb-0" style="font-size: 14px;">
+                                <li class="mb-3 d-flex align-items-start">
+                                    <i class="bi bi-whatsapp text-primary me-2"
+                                        style="font-size: 18px; margin-top: 2px;"></i>
+                                    <div>
+                                        <span class="text-white-50 d-block" style="font-size: 13px;">WhatsApp</span>
+                                        <a href="https://wa.me/6285888797505?text=Hello%20PT%20Vista%20Jaya%20Raya%2C%20I%20would%20like%20to%20ask%20about%20your%20services"
+                                            class="text-white" style="text-decoration: none;"
+                                            target="_blank">085888797505</a>
+                                    </div>
+                                </li>
+                                <!-- <li class="mb-3 d-flex align-items-start">
+                                    <i class="bi bi-telephone-fill text-primary me-2"
+                                        style="font-size: 18px; margin-top: 2px;"></i>
+                                    <div>
+                                        <span class="text-white-50 d-block" style="font-size: 13px;">Phone</span>
+                                        <a href="tel:+622121267348" class="text-white"
+                                            style="text-decoration: none;">(021) 21267348</a>
+                                    </div>
+                                </li> -->
+                                <li class="mb-3 d-flex align-items-start">
+                                    <i class="bi bi-envelope-fill text-primary me-2"
+                                        style="font-size: 18px; margin-top: 2px;"></i>
+                                    <div>
+                                        <span class="text-white-50 d-block" style="font-size: 13px;">Email</span>
+                                        <a href="mailto:hr@vjr.co.id?subject=Service%20Inquiry%20-%20PT%20Vista%20Jaya%20Raya&body=Hello%20PT%20Vista%20Jaya%20Raya%20Team%2C%0A%0AI%20would%20like%20to%20ask%20about%3A%0A"
+                                            class="text-white" style="text-decoration: none;">hr@vjr.co.id</a>
+                                    </div>
+                                </li>
+                                <!-- <li class="mb-3 d-flex align-items-start">
+                                    <i class="bi bi-calendar2-week-fill text-primary me-2"
+                                        style="font-size: 18px; margin-top: 2px;"></i>
+                                    <div>
+                                        <span class="text-white-50 d-block" style="font-size: 13px;">Schedule a
+                                            Call</span>
+                                        <a href="mailto:hr@vjr.co.id?subject=Schedule%20a%20Call%20-%20PT%20Vista%20Jaya%20Raya&body=Hello%20PT%20Vista%20Jaya%20Raya%20Team%2C%0A%0AI%20would%20like%20to%20schedule%20a%20call%20to%20discuss%20your%20collection%20services.%0A%0APlease%20let%20me%20know%20your%20available%20times%20or%20propose%20a%20slot.%0A%0AThank%20you.%0A"
+                                            class="text-white" style="text-decoration: none;">hr@vjr.co.id</a>
+                                    </div>
+                                </li> -->
+
+                                <li class="mb-3 d-flex align-items-start">
+                                    <i class="bi bi-envelope-paper-fill text-primary me-2"
+                                        style="font-size: 18px; margin-top: 2px;"></i>
+                                    <div>
+                                        <span class="text-white-50 d-block" style="font-size: 13px;">Request
+                                            Proposal</span>
+                                        <a href="mailto:hr@vjr.co.id?subject=Request%20Proposal%20-%20PT%20Vista%20Jaya%20Raya&body=Hello%20PT%20Vista%20Jaya%20Raya%20Team%2C%0A%0AI%20would%20like%20to%20request%20a%20proposal%20regarding%20your%20collection%20services.%0A%0APlease%20provide%20details%20on%3A%0A-%20Service%20scope%0A-%20Pricing%20model%0A-%20Implementation%20process%0A-%20Requirements%0A%0AThank%20you.%0A"
+                                            class="text-white" style="text-decoration: none;">hr@vjr.co.id</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Address & Map -->
+                        <div class="col-lg-4 col-md-6">
+                            <h6 class="text-white mb-3" style="font-size:16px;font-weight:600;">
+                                Our Locations
+                            </h6>
+
+                            <!-- ===== Head Office ===== -->
+                            <h6 class="text-white mb-2" style="font-size:14px;font-weight:500;">
+                                Head Office
+                            </h6>
+
+                            <div class="footer-map mb-2">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.5410816318586!2d106.7408267!3d-6.192103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f746ac6e4755%3A0x64fed1b6a2ff1bd4!2sPT.%20Vista%20Jaya%20Raya!5e0!3m2!1sen!2sid!4v1769154835716!5m2!1sen!2sid"
+                                    width="100%" height="140"
+                                    style="border:0;border-radius:10px;filter:grayscale(10%) contrast(95%);"
+                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+
+                            <div class="d-flex align-items-start mb-4">
+                                <i class="bi bi-geo-alt-fill text-primary me-2"
+                                    style="font-size:16px;margin-top:2px;"></i>
+                                <p class="text-white-50 mb-0" style="font-size:13px;line-height:1.6;">
+                                    Rukan Taman Meruya Block N No.11-12, Kembangan Selatan,<br>
+                                    Kembangan, West Jakarta 11620
+                                </p>
+                            </div>
+
+                            <!-- ===== Branch Office ===== -->
+                            <h6 class="text-white mb-2" style="font-size:14px;font-weight:500;">
+                                Branch Office
+                            </h6>
+
+                            <div class="footer-map mb-2">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.38893695986!2d110.41136629999999!3d-6.993720599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708b4f3d09bb1b%3A0x7f6f2c4c0cbcd74b!2sJl.%20Indraprasta%20No.64%2C%20Pindrikan%20Lor%2C%20Kec.%20Semarang%20Tengah%2C%20Kota%20Semarang%2C%20Jawa%20Tengah%2050131!5e0!3m2!1sen!2sid!4v1764825555000!5m2!1sen!2sid"
+                                    width="100%" height="110"
+                                    style="border:0;border-radius:10px;filter:grayscale(10%) contrast(95%);"
+                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-geo-alt-fill text-primary me-2"
+                                    style="font-size:16px;margin-top:2px;"></i>
+                                <p class="text-white-50 mb-0" style="font-size:13px;line-height:1.6;">
+                                    Jl. Indraprasta No.64, Pindrikan Lor, Kec. Semarang Tengah,<br>
+                                    Kota Semarang, Jawa Tengah 50131
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div><!-- /.row -->
+
+                    <!-- Divider & Copyright -->
+                    <div class="row mt-5 pt-3 border-top border-secondary">
+                        <div class="col-12 text-center">
+                            <p class="text-white-50 mb-0" style="font-size:14px;">
+                                Copyright &copy; 2025
+                                <a href="https://www.vjr.co.id" target="_blank"
+                                    class="fw-bold text-white hover-underline">
+                                    Vista Jaya Raya
+                                </a>
+                                <span>All rights reserved.</span>
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </footer>
+            <!-- ========================== Footer Three Section End ========================= -->
+
+        </div>
+    </div>
+
+
+    <!-- Jquery js -->
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <!-- phosphor Js -->
+    <script src="../assets/js/phosphor-icon.js"></script>
+    <!-- Bootstrap Bundle Js -->
+    <script src="../assets/js/boostrap.bundle.min.js"></script>
+
+    <!-- GSAP js -->
+    <script src="../assets/js/gsap.min.js"></script>
+    <!-- Scroll Trigger -->
+    <script src="../assets/js/ScrollTrigger.min.js"></script>
+    <!-- ScrollSmoother -->
+    <script src="../assets/js/ScrollSmoother.min.js"></script>
+    <!-- SplitText -->
+    <script src="../assets/js/SplitText.min.js"></script>
+    <!-- custom GSAP -->
+    <script src="../assets/js/custom-gsap.js"></script>
+
+    <!-- aos Js -->
+    <script src="../assets/js/aos.js"></script>
+    <!-- counter up Js -->
+    <script src="../assets/js/counterup.min.js"></script>
+    <!-- swiper Js -->
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+
+    <script>
+        const gallerySwiper = new Swiper(".agentSwiper", {
+            loop: true,
+            spaceBetween: 24,
+            slidesPerView: 1.2,
+            centeredSlides: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2.2,
+                    centeredSlides: false,
+                },
+                1200: {
+                    slidesPerView: 3,
+                    centeredSlides: false,
+                }
+            }
+        });
+    </script>
+
+    <!-- Marquee js -->
+    <script src="../assets/js/jquery.marquee.min.js"></script>
+    <!-- magnific js -->
+    <script src="../assets/js/magnific-popup.min.js"></script>
+
+    <!-- main js -->
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
