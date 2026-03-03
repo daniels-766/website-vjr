@@ -1160,30 +1160,30 @@
 
                         <!-- AFPI -->
                         <div class="trust-card">
-                            <p class="trust-label">Industry Membership</p>
+                            <p class="trust-label">Anggota</p>
                             <img src="assets/images/trust/afpi.png" alt="AFPI">
-                            <h4>Indonesian Joint Funding Fintech Association (AFPI)</h4>
+                            <h4>Asosiasi Fintech Pendanaan Bersama Indonesia (AFPI)</h4>
                         </div>
 
                         <!-- ISO -->
                         <div class="trust-card">
-                            <p class="trust-label">Information Security Standard</p>
+                            <p class="trust-label">Standar Keamanan Informasi</p>
                             <img src="assets/images/trust/iso27001.png" alt="ISO 27001">
-                            <h4>ISO/IEC 27001 Certified</h4>
+                            <h4>Tersertifikasi ISO/IEC 27001</h4>
                         </div>
 
                         <!-- BNSP -->
                         <div class="trust-card">
-                            <p class="trust-label">Professional Competency Certification</p>
+                            <p class="trust-label">Sertifikasi Kompetensi Profesional</p>
                             <img src="assets/images/trust/bnsp.png" alt="BNSP">
-                            <h4>National Professional Certification Agency (BNSP)</h4>
+                            <h4>Badan Nasional Sertifikasi Profesi (BNSP)</h4>
                         </div>
 
                         <!-- LSPPI -->
                         <div class="trust-card">
-                            <p class="trust-label">Professional Certification Body</p>
+                            <p class="trust-label">Lembaga Sertifikasi Profesi</p>
                             <img src="assets/images/trust/lsppi.png" alt="LSPPI">
-                            <h4>Indonesian Banking Professional Certification Institute</h4>
+                            <h4>Lembaga Sertifikasi Profesi Perbankan Indonesia (LSPPI)</h4>
                         </div>
 
                     </div>
@@ -1404,7 +1404,39 @@
             <!-- main js -->
             <script src="assets/js/main.js"></script>
 
+            <script>
+                window.onload = function () {
+                    if (!localStorage.getItem("popupShown")) {
+                        document.getElementById("popup-overlay").style.display = "flex";
+                        localStorage.setItem("popupShown", "true");
+                    } else {
+                        document.getElementById("popup-overlay").style.display = "none";
+                    }
+                };
 
+                document.getElementById("popup-close").onclick = function () {
+                    document.getElementById("popup-overlay").style.display = "none";
+                };
+            </script>
+        </div>
+    </div>
+    <!-- Popup Overlay -->
+    <div id="popup-overlay">
+        <div class="popup-content">
+            <button id="popup-close">&times;</button>
+            <img src="assets/images/waspada.jpeg" alt="waspada">
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            const popup = document.getElementById("popup-overlay");
+            const closeBtn = document.getElementById("popup-close");
+
+            closeBtn.onclick = function () {
+                popup.style.display = "none";
+            };
+        };
+    </script>
 </body>
 
 </html>
